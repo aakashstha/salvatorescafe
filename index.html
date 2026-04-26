@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salvatore's Café — Extraordinary Coffee & Food. Breakfast, pasta, mains and desserts served with passion." />
+  <title>Salvatore's Café — Extraordinary Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       LOADING OVERLAY
+  ====================================================== -->
+  <div id="loading-overlay" aria-hidden="true">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-logo">
+        <img src="images/logo-2.jpg" alt="Salvatore's Café" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       NAVBAR
+  ====================================================== -->
+  <header id="navbar">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Salvatore's Café — home">
+        <img src="images/logo-2.jpg" alt="Salvatore's Café" class="logo-img" />
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home"        class="nav-link">Home</a></li>
+        <li><a href="#about"       class="nav-link">About</a></li>
+        <li><a href="#menu"        class="nav-link">Menu</a></li>
+        <li><a href="#gallery"     class="nav-link">Gallery</a></li>
+        <li><a href="#reservation" class="nav-link">Reserve</a></li>
+        <li><a href="#contact"     class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger"
+              aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="menu">
+      <ul>
+        <li><a href="#home"        class="mobile-link" role="menuitem">Home</a></li>
+        <li><a href="#about"       class="mobile-link" role="menuitem">About</a></li>
+        <li><a href="#menu"        class="mobile-link" role="menuitem">Menu</a></li>
+        <li><a href="#gallery"     class="mobile-link" role="menuitem">Gallery</a></li>
+        <li><a href="#reservation" class="mobile-link" role="menuitem">Reserve</a></li>
+        <li><a href="#contact"     class="mobile-link" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+    ====================================================== -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero-bg" style="background-image:url('images/hero-bg.jpeg')"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content fade-in-element">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>Extraordinary Coffee</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h1 class="hero-title">
+          Good Food.<br />
+          <em>Great Coffee.</em><br />
+          Every Time.
+        </h1>
+        <p class="hero-subtitle">
+          Breakfast · Pasta · Mains · Desserts<br />
+          Made fresh, served with love, enjoyed together.
+        </p>
+
+        <!-- Feature pills — inside flow so they never overlap buttons -->
+        <div class="hero-pills" aria-hidden="true">
+          <div class="hero-pill"><i class="fa-solid fa-mug-hot"></i> Extraordinary Coffee</div>
+          <div class="hero-pill"><i class="fa-solid fa-utensils"></i> All-Day Dining</div>
+          <div class="hero-pill"><i class="fa-solid fa-star"></i> Family Owned</div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#menu"        class="btn btn-gold">Explore Menu</a>
+          <a href="#reservation" class="btn btn-ghost">Reserve a Table</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         ABOUT
+    ====================================================== -->
+    <section id="about" class="section about" aria-label="About us">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Images -->
+          <div class="about-images fade-in-element">
+            <div class="about-img-main">
+              <img src="images/about-main.jpeg" alt="Salvatore's signature lasagne" loading="lazy" />
+            </div>
+            <div class="about-img-accent">
+              <img src="images/about-accent.jpg" alt="Sal's famous pizza" loading="lazy" />
+            </div>
+            <div class="about-badge">
+              <img src="images/logo-2.jpg" alt="Salvatore's logo" class="badge-logo" />
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-text fade-in-element">
+            <p class="section-tag">Our Story</p>
+            <h2 class="section-title">More Than a Café.<br /><em>A Way of Life.</em></h2>
+            <p class="about-body">
+              Salvatore's was born from a simple belief — that extraordinary coffee and
+              honest, soul-warming food can make any day better. From the first espresso
+              to the last forkful of pasta, every detail is crafted with care.
+            </p>
+            <p class="about-body">
+              We're a family café with Italian roots, open all day and welcoming everyone —
+              whether you're in for a quick flat white, a leisurely eggs benedict, or a generous
+              bowl of fettuccine on a Friday night.
+            </p>
+
+            <ul class="about-pillars" role="list">
+              <li>
+                <span class="pillar-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                <div>
+                  <strong>Extraordinary Coffee</strong>
+                  <span>Our signature blends, brewed to perfection every time</span>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon"><i class="fa-solid fa-bowl-food"></i></span>
+                <div>
+                  <strong>Made Fresh Daily</strong>
+                  <span>Everything prepared in-house from quality ingredients</span>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon"><i class="fa-solid fa-heart"></i></span>
+                <div>
+                  <strong>Family Spirit</strong>
+                  <span>A warm, welcoming space for everyone — always</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         MENU
+    ====================================================== -->
+    <section id="menu" class="section menu" aria-label="Menu">
+      <div class="container">
+
+        <div class="section-header fade-in-element">
+          <p class="section-tag">What We Serve</p>
+          <h2 class="section-title">The <em>Menu</em></h2>
+          <p class="section-subtitle">All-day dining done right. Browse our favourites below.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-tab="breakfast" role="tab" aria-selected="true"  aria-controls="tab-breakfast">
+            <i class="fa-solid fa-sun"></i> Breakfast
+          </button>
+          <button class="menu-tab"        data-tab="pasta"     role="tab" aria-selected="false" aria-controls="tab-pasta">
+            <i class="fa-solid fa-bowl-food"></i> Pasta
+          </button>
+          <button class="menu-tab"        data-tab="mains"     role="tab" aria-selected="false" aria-controls="tab-mains">
+            <i class="fa-solid fa-drumstick-bite"></i> Mains
+          </button>
+          <button class="menu-tab"        data-tab="desserts"  role="tab" aria-selected="false" aria-controls="tab-desserts">
+            <i class="fa-solid fa-cake-candles"></i> Desserts
+          </button>
+        </div>
+
+        <!-- ---- BREAKFAST ---- -->
+        <div class="menu-panel active" id="tab-breakfast" role="tabpanel">
+          <div class="menu-grid">
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-eggs-benedict.jpg" alt="Eggs Benedict" loading="lazy" />
+                <span class="menu-badge">Signature</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Eggs Benedict</h3>
+                  <span class="menu-price">$18</span>
+                </div>
+                <p>Toasted English muffin, leg ham, silky poached eggs draped in house hollandaise, black sesame, chives.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-omelette.jpeg" alt="Sal's Omelette" loading="lazy" />
+                <span class="menu-badge">Bestseller</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Sal's Omelette</h3>
+                  <span class="menu-price">$16</span>
+                </div>
+                <p>Three-egg omelette with mushroom, tomato, bacon & cheese. Served with buttered sourdough toast.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-full-breakfast.jpeg" alt="Big Sal's Breakfast" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Big Sal's Breakfast</h3>
+                  <span class="menu-price">$22</span>
+                </div>
+                <p>Two eggs your way, bacon, sausage, grilled tomato, golden hash browns & thick-cut toast.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-garlic-bread.jpeg" alt="Garlic Bread" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Café Garlic Bread</h3>
+                  <span class="menu-price">$7</span>
+                </div>
+                <p>Freshly baked sourdough loaf brushed with herb butter, toasted golden and served warm in a basket.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ---- PASTA ---- -->
+        <div class="menu-panel" id="tab-pasta" role="tabpanel">
+          <div class="menu-grid">
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-spaghetti-bolognese.jpeg" alt="Spaghetti Bolognese" loading="lazy" />
+                <span class="menu-badge">Classic</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Spaghetti Bolognese</h3>
+                  <span class="menu-price">$22</span>
+                </div>
+                <p>Slow-cooked beef & pork ragù, spaghetti, rich tomato sugo, fresh basil, shaved Parmigiano.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-fettuccine-carbonara.jpeg" alt="Fettuccine Carbonara" loading="lazy" />
+                <span class="menu-badge">Favourite</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Fettuccine Carbonara</h3>
+                  <span class="menu-price">$24</span>
+                </div>
+                <p>Ribbon pasta, smoky bacon, white wine cream sauce, mushroom, baby spinach, Parmesan.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-fettuccine-mushroom.jpeg" alt="Fettuccine Boscaiola" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Fettuccine Boscaiola</h3>
+                  <span class="menu-price">$24</span>
+                </div>
+                <p>Egg fettuccine, wild mushroom, prosciutto, roasted garlic cream, chives, aged Parmesan.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-seafood-linguine.jpeg" alt="Seafood Linguine" loading="lazy" />
+                <span class="menu-badge">Chef's Pick</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Seafood Linguine</h3>
+                  <span class="menu-price">$28</span>
+                </div>
+                <p>Spaghetti tossed with prawns, calamari, mussels in a garlic-chilli napoli sauce, fresh parsley.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ---- MAINS ---- -->
+        <div class="menu-panel" id="tab-mains" role="tabpanel">
+          <div class="menu-grid">
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-fish-chips.jpeg" alt="Beer-Battered Fish & Chips" loading="lazy" />
+                <span class="menu-badge">Pub Classic</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Beer-Battered Fish & Chips</h3>
+                  <span class="menu-price">$24</span>
+                </div>
+                <p>Golden beer-battered barramundi, hand-cut chips, house tartare sauce, fresh lemon.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-burger.jpeg" alt="Sal's Signature Burger" loading="lazy" />
+                <span class="menu-badge">Bestseller</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Sal's Signature Burger</h3>
+                  <span class="menu-price">$22</span>
+                </div>
+                <p>Smash beef patty, double cheddar, pickles, mustard, house sauce, lettuce, chips on the side.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-club-sandwich.jpg" alt="Sal's Club Sandwich" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Sal's Club Sandwich</h3>
+                  <span class="menu-price">$19</span>
+                </div>
+                <p>Triple-decker toasted sandwich, chicken, bacon, egg, cheese, tomato, lettuce with aioli & chips.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-wrap.jpeg" alt="Grilled Chicken Wrap" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Grilled Chicken Wrap</h3>
+                  <span class="menu-price">$17</span>
+                </div>
+                <p>Warm flatbread, marinated chicken, shredded lettuce, tomato, onion, house sauce, served fresh.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ---- DESSERTS ---- -->
+        <div class="menu-panel" id="tab-desserts" role="tabpanel">
+          <div class="menu-grid">
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-waffle.jpeg" alt="Banana Cream Waffle" loading="lazy" />
+                <span class="menu-badge">Must Try</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Banana Cream Waffle</h3>
+                  <span class="menu-price">$14</span>
+                </div>
+                <p>Crispy Belgian waffle, whipped cream, dried banana, dark chocolate drizzle, caramel sauce.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-choc-tarts.jpeg" alt="Chocolate Caramel Tarts" loading="lazy" />
+                <span class="menu-badge">Signature</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Chocolate Caramel Tarts</h3>
+                  <span class="menu-price">$10</span>
+                </div>
+                <p>Dark chocolate shell, sticky caramel-nut filling, topped with a rich chocolate shard. Served warm.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-cheesecake.jpeg" alt="Triple Chocolate Cheesecake" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Triple Choc Cheesecake</h3>
+                  <span class="menu-price">$12</span>
+                </div>
+                <p>Biscuit base, creamy three-chocolate filling, white & dark chocolate shards, ganache drizzle.</p>
+              </div>
+            </article>
+
+            <article class="menu-card fade-in-element">
+              <div class="menu-card-img-wrap">
+                <img src="images/menu-coconut-slice.jpeg" alt="Coconut Slice" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Coconut Slice</h3>
+                  <span class="menu-price">$8</span>
+                </div>
+                <p>House-baked golden coconut slice with a soft, moist crumb. Perfect paired with a flat white.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         GALLERY
+    ====================================================== -->
+    <section id="gallery" class="section gallery" aria-label="Photo gallery">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <p class="section-tag">Our Food</p>
+          <h2 class="section-title">Fresh from the <em>Kitchen</em></h2>
+          <p class="section-subtitle">A look at what comes out of our kitchen every day.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item gallery-large fade-in-element" data-label="Grilled Fish & Chips">
+            <img src="images/gallery-1.jpeg" alt="Grilled fish with chips and fresh salad" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Fish & Chips</span></div>
+          </div>
+
+          <div class="gallery-item fade-in-element" data-label="Creamy Fettuccine">
+            <img src="images/gallery-2.jpeg" alt="Creamy fettuccine boscaiola" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Fettuccine</span></div>
+          </div>
+
+          <div class="gallery-item fade-in-element" data-label="Gnocchi al Sugo">
+            <img src="images/gallery-3.jpeg" alt="Gnocchi in rich tomato sauce" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Gnocchi</span></div>
+          </div>
+
+          <div class="gallery-item gallery-wide fade-in-element" data-label="Caesar Salad">
+            <img src="images/gallery-4.jpeg" alt="Caesar salad with boiled egg and croutons" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Caesar Salad</span></div>
+          </div>
+
+          <div class="gallery-item fade-in-element" data-label="Saffron Penne">
+            <img src="images/gallery-5.jpeg" alt="Penne pasta in saffron cream sauce" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Saffron Penne</span></div>
+          </div>
+
+          <div class="gallery-item fade-in-element" data-label="Banana Waffle">
+            <img src="images/gallery-6.jpeg" alt="Waffle with banana cream and chocolate" loading="lazy" />
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Banana Waffle</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+        <p class="lightbox-label" id="lightbox-label"></p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         RESERVATION
+    ====================================================== -->
+    <section id="reservation" class="section reservation" aria-label="Table reservation">
+      <div class="reservation-bg" style="background-image:url('images/reservation-bg.jpg')"></div>
+      <div class="reservation-scrim"></div>
+
+      <div class="container reservation-container">
+
+        <div class="reservation-info fade-in-element">
+          <p class="section-tag light">Dine With Us</p>
+          <h2 class="section-title light">Reserve Your<br /><em>Table</em></h2>
+          <p class="reservation-body">
+            Whether it's a quiet breakfast for two or a celebration with the whole family,
+            we'd love to have you. Fill in the form and we'll confirm within 24 hours.
+          </p>
+          <ul class="reservation-details" role="list">
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 234-5678</li>
+            <li><i class="fa-solid fa-envelope"></i> bookings@salvatorescafe.com</li>
+            <li><i class="fa-solid fa-sun"></i> Breakfast: 7 am – 11:30 am</li>
+            <li><i class="fa-solid fa-utensils"></i> Lunch & Dinner: 12 pm – 9 pm</li>
+          </ul>
+        </div>
+
+        <form class="reservation-form fade-in-element" id="reservation-form" novalidate aria-label="Reservation form">
+          <h3 class="form-title">Make a Booking</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="res-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+              <span class="form-error" id="error-name" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="res-email" name="email" placeholder="jane@email.com" autocomplete="email" required />
+              <span class="form-error" id="error-email" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="res-date" name="date" required />
+              <span class="form-error" id="error-date" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Time <span aria-hidden="true">*</span></label>
+              <select id="res-time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <optgroup label="Breakfast">
+                  <option value="07:00">7:00 AM</option>
+                  <option value="07:30">7:30 AM</option>
+                  <option value="08:00">8:00 AM</option>
+                  <option value="08:30">8:30 AM</option>
+                  <option value="09:00">9:00 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                </optgroup>
+                <optgroup label="Lunch & Dinner">
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                </optgroup>
+              </select>
+              <span class="form-error" id="error-time" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-guests">Guests <span aria-hidden="true">*</span></label>
+              <select id="res-guests" name="guests" required>
+                <option value="" disabled selected>How many?</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests — call us</option>
+              </select>
+              <span class="form-error" id="error-guests" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="res-notes">Special Requests</label>
+            <textarea id="res-notes" name="notes" rows="3"
+              placeholder="Dietary requirements, birthdays, high chairs…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-full">
+            <i class="fa-solid fa-calendar-check"></i>
+            Confirm Booking
+          </button>
+
+          <div class="form-success" id="form-success" hidden aria-live="assertive">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Booking Received!</strong>
+              <span>We'll confirm by email within 24 hours. See you soon!</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CONTACT
+    ====================================================== -->
+    <section id="contact" class="section contact" aria-label="Contact information">
+      <div class="container">
+        <div class="section-header fade-in-element">
+          <p class="section-tag">Come Say Hello</p>
+          <h2 class="section-title">Find <em>Us</em></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards fade-in-element">
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h3>Address</h3>
+                <p>13/21 Knuckey St, Darwin City NT 0800, Australia</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone-flip"></i></div>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+61889419823">+61 889 419 823</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@salvatorescafe.com">hello@salvatorescafe.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card contact-card--full">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h3>Opening Hours</h3>
+                <table class="hours-table" aria-label="Opening hours">
+                  <tbody>
+                    <tr><td>Mon – Fri</td><td>7:00 am – 9:00 pm</td></tr>
+                    <tr><td>Saturday</td><td>7:00 am – 10:00 pm</td></tr>
+                    <tr><td>Sunday</td><td>8:00 am – 8:00 pm</td></tr>
+                    <tr class="closed"><td>Public Holidays</td><td>Check social media</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-map fade-in-element">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.4!2d151.2093!3d-33.8688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUyJzA4LjMiUyAxNTHCsDEyJzMzLjUiRQ!5e0!3m2!1sen!2sau!4v1700000000000"
+              width="100%" height="100%"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Salvatore's Café on Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="images/logo-2.jpg" alt="Salvatore's Café" class="footer-logo" />
+        <p>Extraordinary Coffee. Honest food. Always made with love.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reserve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul role="list">
+          <li>Mon–Fri: 7 am – 9 pm</li>
+          <li>Saturday: 7 am – 10 pm</li>
+          <li>Sunday: 8 am – 8 pm</li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Specials, new menu items and café news — right to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Newsletter email" required />
+          <button type="submit" aria-label="Subscribe">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        <span class="newsletter-msg" id="newsletter-msg" aria-live="polite"></span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Salvatore's Café. All rights reserved.</p>
+      <p>Made with <i class="fa-solid fa-heart"></i> and extraordinary coffee.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Back to top" hidden>
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

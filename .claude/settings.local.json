@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.salvatorescafe.com)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:ucarecdn.com)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://www.salvatorescafe.com/\")"
+    ]
+  }
+}
